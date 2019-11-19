@@ -210,13 +210,28 @@
                                     </thead>
                                     <tbody>
                                     	<%
-											//print the table
+                                    		while(rs.next()){
+												out.print("<tr href=\"#\">");
+												
+                                    			out.print("<td>");
+                                    			out.print(rs.getString("name"));
+                                    			out.print("</td>");
+                                    			
+                                    			out.print("<td>");
+                                    			out.print(rs.getString("address"));
+                                    			out.print("</td>");
+                                    			
+                                    			out.print("<td>");
+                                    			out.print(rs.getString("message"));
+                                    			out.print("</td>");
+                                    			
+                                    			out.print("<td>");
+                                    			out.print(rs.getString("date"));
+                                    			out.print("</td>");
+                                    			
+                                    			out.print("</tr>"); 
+                                    		} 
                                     	%>
-                                        <tr>
-                                        	<td><% //leave this for now %></td>
-                                        	<td><%  %></td>
-                                        	<td><% %></td>
-                                        </tr>
                                     </tbody>
                                 </table>
 
