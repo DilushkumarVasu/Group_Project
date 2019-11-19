@@ -9,12 +9,12 @@
 	</head>
 	<body>
 		<form class="box" action="Login" method="post">
-			<h1>Farmer Login</h1>
+			<h1>Agricultural Specialist Login</h1>
 			<input type="text" name="uname" placeholder="Username">
 			<input type="password" name="pass" placeholder="Password">
 			<input type="submit" name="submit" value="Login">
-			<a href="f_signUp.jsp">Create an account</a><br><br>
-			<a href="">Forget Password?</a>
+			<a href="#">Create an account</a><br><br>
+			<a href="#">Forget Password?</a>
 		</form>
 	</body>
 </html>

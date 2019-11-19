@@ -35,7 +35,7 @@
 					</div>
 				</div>
 				<hr>
-			<form action="reg.jsp" onsubmit="return validateForm()" method="post">
+			<form action="FarmerRegistration" onsubmit="return validateForm()" method="post">
 				<div class="row">
 					<label class="label col-md-2 control-label">Name</label>
 					<div class="col-md-10">
@@ -53,14 +53,14 @@
 				<div class="row">
 					<label class="label col-md-2 control-label">Address</label>
 					<div class="col-md-10">
-						<input type="text" class="form-control" name="add" placeholder="Enter Your Address" required>
+						<input type="text" class="form-control" name="address" placeholder="Enter Your Address" required>
 					</div>
 				</div>
 				
 				<div class="row">
 					<label class="label col-md-2 control-label">Gender</label>
 					<div class="col-md-10">
-						<!--<input type="text" class="form-control" name="gender" placeholder="Male/Female/Other" required>-->
+						<!-- <input type="text" class="form-control" name="gender" placeholder="Male/Female/Other" required> -->
 						<input type="radio" name="gender" value="male" required><small>Male</small>
 						<input type="radio" name="gender" value="female" required><small>Female</small>
 						<input type="radio" name="gender" value="other" required><small>Other</small>
@@ -70,7 +70,7 @@
 				<div class="row">
 					<label class="label col-md-2 control-label">Phone</label>
 					<div class="col-md-10">
-						<input type="tel" class="form-control" name="tel" placeholder="Phone Number" required>
+						<input type="tel" class="form-control" name="tp" placeholder="Phone Number" required>
 					</div>
 				</div>
 				
