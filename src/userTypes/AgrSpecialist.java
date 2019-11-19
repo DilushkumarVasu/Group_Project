@@ -28,6 +28,20 @@ public class AgrSpecialist {
 		}
 	}
 	
+	//function to register a new agricultural specialist in the system
+	public void Register(String name, String nic, String speciality, String address, String email, String tp, String region) {
+		final String query = "INSERT INTO agricultural_specialist(`nic`, `name`, `speciality`, `address`, `email`, `region`, `telephone`) VALUES ('" + nic + "', '" + name +  "', '" + speciality + "', '" + address + "', '" + email + "', '" + region + "', '" + tp + "'";
+		
+		try {
+			Connection con = connect();
+			Statement stmt = con.createStatement();
+			stmt.executeQuery(query);
+		}
+		catch (Exception e) {
+		}
+		
+	}
+	
 	public ResultSet getReports() {
 		Connection con = connect();
 		
