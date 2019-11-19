@@ -34,7 +34,7 @@ input[type="submit"],input[type="reset"],a,.agileinfo_services_grid1_pos,.agilei
 }
 /*-- banner --*/
 .banner{
-	background:url(../images/banner.jpg) no-repeat 0px 0px;
+	background:url(../images/cambodian.jpg) no-repeat 0px 0px;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -43,7 +43,7 @@ input[type="submit"],input[type="reset"],a,.agileinfo_services_grid1_pos,.agilei
 	min-height:750px;
 }
 .banner1{
-	background:url(../images/banner.jpg) no-repeat 0px -115px;
+	background:url(../images/cambodian.jpg) no-repeat 0px -115px;
 	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -120,7 +120,7 @@ input[type="submit"],input[type="reset"],a,.agileinfo_services_grid1_pos,.agilei
 	font-style: normal;
     font-size: 2em;
     display: inline-block;
-	color: #7f56b8;
+	color: #5eb856;;
     vertical-align: top;
 }
 .w3_agileits_search {
@@ -720,7 +720,7 @@ input[type="submit"],input[type="reset"],a,.agileinfo_services_grid1_pos,.agilei
 }
 
 .menu--iris .menu__item--current .menu__link {
-	color: #7f56b8;
+	color: #750c21;
 }
 
 .menu--iris .menu__link::before,

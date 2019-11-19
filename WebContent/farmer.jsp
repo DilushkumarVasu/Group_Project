@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +28,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	
 <body>
 <!-- banner -->
-<div>
 	<div class="banner">
 		<div class="w3_agile_banner_top">
 			<div class="agile_phone_mail">
@@ -35,7 +37,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</ul>
 			</div>
 		</div>
-		
+		<div class="agileits_w3layouts_banner_nav">
 			<nav class="navbar navbar-default">
 				<div class="navbar-header navbar-left">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -45,6 +47,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<span class="icon-bar"></span>
 					</button>
 					<h1><a class="navbar-brand" href="index.html"><i>VL</i><span>anka</span></a></h1>
+					
 				</div>
 				
 				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
@@ -52,28 +55,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<ul class="nav navbar-nav menu__list">
 							<li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
 							<li class="menu__item"><a href="services.html" class="menu__link">Services</a></li>
-							<li class="dropdown menu__item">
+							<li class="dropdown menu__item menu__item--current">
 								<a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown">Activities <b class="caret"></b></a>
 								<ul class="dropdown-menu agile_short_dropdown">
 									<li><a href="f_ques.jsp">Question</a></li>
 									<li><a href="f_resource.jsp">Resource</a></li>
 								</ul>
 							</li>
-							<li class="menu__item menu__item--current"><a href="map.html" class="menu__link">Map</a></li>
+							<li class="menu__item"><a href="map.html" class="menu__link">Map</a></li>
 							<li class="menu__item"><a href="mail.html" class="menu__link">Mail Us</a></li>
 						</ul>
-						
+						<div class="w3_agileits_search">
+							<form action="#" method="post">
+								<input type="text" name="Search" placeholder="Search..." required="">
+								<input type="submit" value=" ">
+							</form>
+						</div>
 					</nav>
 				</div>
 			</nav>
 		</div>
-
 		
-	
-	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4047218.222696117!2d78.46115940950288!3d7.857178369647221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2593cf65a1e9d%3A0xe13da4b400e2d38c!2sSri%20Lanka!5e0!3m2!1sen!2slk!4v1572329875642!5m2!1sen!2slk" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-</div>
-
-<!-- //footer -->
+	<!-- //footer -->
 <!-- start-smoth-scrolling -->
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
@@ -106,7 +109,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			});
 	</script>
 <!-- //here ends scrolling icon -->
-
 	
+
 </body>
 </html>
