@@ -1,13 +1,13 @@
 <%@page import="java.sql.ResultSet"%>
-<%-- <%@page import="userTypes.AgrSpecialist"%> --%> 
+<%@page import="userTypes.AgrSpecialist"%> 
 
 <%
-	//Class.forName("com.mysql.jdbc.Driver");
-	//AgrSpecialist specialist = new AgrSpecialist();
+	Class.forName("com.mysql.jdbc.Driver");
+	AgrSpecialist specialist = new AgrSpecialist();
 	
 	//String[] Notifications = specialist.getNotifications();
 	
-	//Test
+	
 %>
 
 <!doctype html>
