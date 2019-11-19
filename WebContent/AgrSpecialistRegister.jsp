@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign Up Form by Colorlib</title>
+    <title>Sign Up</title>
 
     <!-- Font Icon -->
     <link rel="stylesheet" href="assets/fonts/material-icon/css/material-design-iconic-font.min.css">
@@ -22,7 +22,7 @@
                 <div class="signup-img">
                     <img src="assets/img/form-img.jpg" alt="">
                     <div class="signup-img-content">
-                        <h2>Register now </h2>
+                        <h2>Register Agricultural Specialist </h2>
                     </div>
                 </div>
                 <div class="signup-form">
@@ -78,5 +78,5 @@
     <script src="assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
     <script src="assets/vendor/jquery-validation/dist/additional-methods.min.js"></script>
     <script src="assets/js/main.js"></script>
-</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</body>
 </html>
