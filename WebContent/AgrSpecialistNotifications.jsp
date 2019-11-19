@@ -208,11 +208,22 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <h5></h5>
-                                <div class="alert alert-info alert-with-icon" data-notify="container">
+                                <%
+                                		final String htmlFirstHalf = "<div class=\"alert alert-info alert-with-icon\" data-notify=\"container\"><button type=\"button\" aria-hidden=\"true\" class=\"close\">X—</button><span data-notify=\"icon\" class=\"pe-7s-bell\"></span><span data-notify=\"message\">";
+                                		final String htmlSecondHalf = "</span></div>";
+                                		
+                                		
+                                		while(rs.next()){
+                                			out.print(htmlFirstHalf);
+                                			out.print(rs.getString("message"));
+                                			out.print(htmlSecondHalf);
+                                		}
+                               	%>
+                                <!-- <div class="alert alert-info alert-with-icon" data-notify="container">
                                     <button type="button" aria-hidden="true" class="close">X—</button>
                                     <span data-notify="icon" class="pe-7s-bell"></span>
                                     <span data-notify="message">This is a notification with close button and icon and have many lines. You can see that the icon and the close button are always vertically aligned. This is a beautiful notification. So you don't have to worry about the style.</span>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <br>
