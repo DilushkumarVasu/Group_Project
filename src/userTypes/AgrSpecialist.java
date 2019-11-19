@@ -43,10 +43,16 @@ public class AgrSpecialist {
 	}
 	
 	public ResultSet getReports() {
+		final String query = "SELECT farmer.nic, farmer.name, reports.message, reports.date\r\n" + 
+				"FROM farmer INNER JOIN reports\r\n" + 
+				"ON farmer.nic == reports.nic\r\n" + 
+				"ORDER BY reports.date DESC";
+		
+		
 		Connection con = connect();
 		
 		try {
-			ResultSet rs = con.createStatement().executeQuery("SELECT * FROM reports ORDER BY date DESC");
+			ResultSet rs = con.createStatement().executeQuery(query);
 			return rs;
 		}
 		catch(Exception e) {

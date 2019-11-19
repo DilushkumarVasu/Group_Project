@@ -6,6 +6,7 @@
 
 	AgrSpecialist specialist = new AgrSpecialist();
 	ResultSet rs = specialist.getReports();
+	rs.beforeFirst();
 %>
 
 
@@ -16,7 +17,7 @@
 	<link rel="icon" type="image/png" href="assets/img/favicon.ico">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>Light Bootstrap Dashboard by Creative Tim</title>
+	<title>Reports</title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -63,48 +64,48 @@
                         <p>Dashboard</p>
                     </a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="user.html">
                         <i class="pe-7s-user"></i>
                         <p>User Profile</p>
                     </a>
-                </li>
+                </li> -->
                 <li class="active">
                     <a href="table.html">
                         <i class="pe-7s-note2"></i>
                         <p>Reports</p>
                     </a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="typography.html">
                         <i class="pe-7s-news-paper"></i>
                         <p>Typography</p>
                     </a>
-                </li>
-                <li>
+                </li> -->
+                <!-- <li>
                     <a href="icons.html">
                         <i class="pe-7s-science"></i>
                         <p>Icons</p>
                     </a>
-                </li>
-                <li>
+                </li> -->
+                <!-- <li>
                     <a href="maps.html">
                         <i class="pe-7s-map-marker"></i>
                         <p>Maps</p>
                     </a>
-                </li>
+                </li> -->
                 <li>
                     <a href="notifications.html">
                         <i class="pe-7s-bell"></i>
                         <p>Notifications</p>
                     </a>
                 </li>
-				<li class="active-pro">
+				<!-- <li class="active-pro">
                     <a href="upgrade.html">
                         <i class="pe-7s-rocket"></i>
                         <p>Upgrade to PRO</p>
                     </a>
-                </li>
+                </li> -->
             </ul>
     	</div>
     </div>
@@ -161,7 +162,7 @@
                                <p>Account</p>
                             </a>
                         </li>
-                        <li class="dropdown">
+                        <!-- <li class="dropdown">
                               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                     <p>
 										Dropdown
@@ -178,7 +179,7 @@
                                 <li class="divider"></li>
                                 <li><a href="#">Separated link</a></li>
                               </ul>
-                        </li>
+                        </li> -->
                         <li>
                             <a href="#">
                                 <p>Log out</p>
@@ -196,17 +197,21 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="header">
-                                <h4 class="title">Striped Table with Hover</h4>
-                                <p class="category">Here is a subtitle for this table</p>
+                                <h4 class="title">Reports</h4>
+                                <p class="category">All the reports are shown here</p>
                             </div>
                             <div class="content table-responsive table-full-width">
                                 <table class="table table-hover table-striped">
                                     <thead>
-                                    	<th>Name</th>
+                                    	<th>Reporter</th>
+                                    	<th>Region</th>
                                     	<th>Message</th>
                                     	<th>Date</th>
                                     </thead>
                                     <tbody>
+                                    	<%
+											//print the table
+                                    	%>
                                         <tr>
                                         	<td><% //leave this for now %></td>
                                         	<td><%  %></td>
@@ -224,7 +229,7 @@
             </div>
         </div>
 
-        <footer class="footer">
+        <!-- <footer class="footer">
             <div class="container-fluid">
                 <nav class="pull-left">
                     <ul>
@@ -250,11 +255,8 @@
                         </li>
                     </ul>
                 </nav>
-                <p class="copyright pull-right">
-                    &copy; <script>document.write(new Date().getFullYear())</script> <a href="http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
-                </p>
             </div>
-        </footer>
+        </footer> -->
 
 
     </div>
