@@ -29,24 +29,20 @@
                     <form action="AgriculturalSpecialistRegistration" method="POST" class="register-form" id="register-form">
                         <div class="form-group">
                             <div class="form-input">
-                                <label for="name" class="required">Full name</label>
+                                <label for="name" class="required">Address</label>
                                 <input type="text" name="name" id="name" />
                             </div>
                             <div class="form-input">
-                                <label for="nic" class="required">NIC</label>
+                                <label for="nic" class="required">ID</label>
                                 <input type="text" name="nic" id="nic" />
                             </div>
                             <div class="form-input">
-                                <label for="address" class="required">Address</label>
+                                <label for="address" class="required">Size</label>
                                 <input type="text" name="address" id="address" />
                             </div>
                             <div class="form-input">
-                                <label for="email" class="required">Email</label>
+                                <label for="email" class="required">Owner</label>
                                 <input type="text" name="email" id="email" />
-                            </div>
-                            <div class="form-input">
-                                <label for="phone_number" class="required">Phone number</label>
-                                <input type="text" name="phone_number" id="phone_number" />
                             </div>
                         </div>
                         
