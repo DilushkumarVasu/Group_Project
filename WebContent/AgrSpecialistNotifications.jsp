@@ -1,9 +1,12 @@
+<%@page import="com.mysql.cj.protocol.Resultset"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="userTypes.AgrSpecialist"%> 
 
 <%
 	Class.forName("com.mysql.jdbc.Driver");
 	AgrSpecialist specialist = new AgrSpecialist();
+	ResultSet rs = specialist.getNotifications();
+	rs.beforeFirst();
 	
 	//String[] Notifications = specialist.getNotifications();
 	
@@ -77,18 +80,18 @@
                         <p>Table List</p>
                     </a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="typography.html">
                         <i class="pe-7s-news-paper"></i>
                         <p>Typography</p>
                     </a>
-                </li>
-                <li>
+                </li> -->
+                <!-- <li>
                     <a href="icons.html">
                         <i class="pe-7s-science"></i>
                         <p>Icons</p>
                     </a>
-                </li>
+                </li> -->
                 <!-- <li>
                     <a href="maps.html">
                         <i class="pe-7s-map-marker"></i>
@@ -163,7 +166,7 @@
                                <p>Account</p>
                             </a>
                         </li>
-                        <li class="dropdown">
+                        <!-- <li class="dropdown">
                               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                     <p>
 										Dropdown
@@ -181,7 +184,7 @@
                                 <li><a href="#">Separated link</a></li>
                               </ul>
                         </li>
-                        <li>
+ -->                        <li>
                             <a href="#">
                                 <p>Log out</p>
                             </a>
