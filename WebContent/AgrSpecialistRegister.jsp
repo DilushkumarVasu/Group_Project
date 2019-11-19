@@ -26,7 +26,7 @@
                     </div>
                 </div>
                 <div class="signup-form">
-                    <form method="POST" class="register-form" id="register-form">
+                    <form action="AgriculturalSpecialistRegistration" method="POST" class="register-form" id="register-form">
                         <div class="form-group">
                             <div class="form-input">
                                 <label for="name" class="required">Full name</label>
@@ -54,7 +54,7 @@
                             </div>
                             <div class="form-input">
                                 <label for="regions" class="required">Assigned region</label>
-                                <input type="text" name="regions" id="regions" />
+                                <input type="text" name="region" id="regions" />
                             </div>
                         </div>
                         
