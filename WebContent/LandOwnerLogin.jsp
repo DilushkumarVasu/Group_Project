@@ -9,7 +9,7 @@
 	</head>
 	<body>
 		<form class="box" action="#" method="post">
-			<h1>Farmer Login</h1>
+			<h1>Landowner Login</h1>
 			<input type="text" name="uname" placeholder="Username">
 			<input type="password" name="pass" placeholder="Password">
 			<input type="submit" name="submit" value="Login">
