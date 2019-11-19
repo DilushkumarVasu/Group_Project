@@ -44,17 +44,7 @@ public class AgrSpecialist {
 		Connection con = connect();
 		
 		try {
-			ResultSet rs = con.createStatement().executeQuery("SELECT * FROM `reports` WHERE status != 'read' ORDER BY date DESC"); 
-			//while(rs.next()) { 
-				//problem is with the following 2 lines
-//				String msg =  rs.getString("message").substring(0, 25);
-//				rs.updateString("message", msg);
-//			}
-//			System.out.print("Here");
-			rs.first();
-			System.out.print(rs.getString("message"));
-			rs.next();
-			System.out.print(rs.getString("message"));
+			ResultSet rs = con.createStatement().executeQuery("SELECT * FROM `reports` WHERE status != 'read' ORDER BY date DESC");
 			return rs;
 		}
 		catch(Exception e) {
