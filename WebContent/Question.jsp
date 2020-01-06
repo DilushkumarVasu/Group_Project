@@ -31,7 +31,7 @@
 			<div class="w3layouts_mail_grid">
 				<div class="col-md-7 agileits_mail_grid_right agileits_w3layouts_mail_grid_right">
 					<div class="agileits_mail_grid_right1 agile_mail_grid_right1">
-						<form action="" method="post">
+						<form action="ques" method="post">
 							<span>
 								<i>Username</i>
 								<input type="text" name="uname" class="form-control" style="width:450px" value="" required="">
@@ -61,7 +61,9 @@
 								<textarea name="question" class="form-control" style="width:450px" required=""></textarea>
 							</span>
 							<input type="submit" class="btn btn-primary" value="Submit Now">
-							<a href="f_ques.jsp" class="btn btn-primary">Back</a>
+						</form>
+						<form action="f_ques.jsp">
+							<input type="submit" class="btn btn-primary" style="background-color:orange" value="Back">
 						</form>
 					</div>
 				</div>
@@ -73,6 +75,7 @@
 </html>
 
 <%
+/*
 String a=request.getParameter("nic");
 String b=request.getParameter("date");
 String c=request.getParameter("question");
@@ -91,6 +94,6 @@ if(a!=null && b!=null && c!=null)
 	stat.executeUpdate();
 	response.sendRedirect("Question.jsp");
 }
-
+*/
 
 %>

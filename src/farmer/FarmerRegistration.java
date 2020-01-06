@@ -37,8 +37,7 @@ public class FarmerRegistration extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+		// TODO Auto-generated method stu
 		
 		String name = request.getParameter("name");
 		String nic = request.getParameter("nic");
@@ -49,10 +48,19 @@ public class FarmerRegistration extends HttpServlet {
 		String username = request.getParameter("uname");
 		String password = request.getParameter("pass");
 		
-		Farmer f = new Farmer();
+		/*Farmer f = new Farmer();
 		f.Register(name, nic, address, gender, tp, email, username, password);
+		response.sendRedirect("f_login.jsp");
 //		f.foo();
-//		Farmer.foo();
+//		Farmer.foo();*/
+		if(nic!=null && name!=null && address!=null && gender!=null && tp!=null && email!=null && username!=null && password!=null)
+		{
+			Farmer f = new Farmer();
+			f.Register(name, nic, address, gender, tp, email, username, password);
+			response.sendRedirect("f_login.jsp");
+		}
+
+		
 	}
 
 }

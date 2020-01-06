@@ -11,16 +11,23 @@ import java.security.MessageDigest;
 import java.sql.Connection;
 import java.sql.Statement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import javax.servlet.http.HttpServletResponse;
 
 public class Farmer {
 	public Connection connect() {
-		String conString = "jdbc:mysql://localhost:3306/vlanka";
+		String conString="jdbc:mysql://localhost/vlanka";
 		Properties prp = new Properties();
 		prp.put("user", "root");
-
+		/*String username="root";
+		String password="";*/
+		
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection conn = DriverManager.getConnection(conString, prp);
+			/*Class.forName("com.mysql.jdbc.Driver");
+			Connection conn=DriverManager.getConnection(conString,username,password);*/
 			
 			return conn;
 		}
@@ -50,14 +57,34 @@ public class Farmer {
 			
 			
 			pst.execute();
+			
+			
+			
 		}
 		catch (Exception e) {
 		}
 		
 	}
-
-	public void foo() {
-		System.out.print("Fooooo");
+	
+	public void question(String nic,String date,String question)  {
+		try{
+		Connection conn=connect();
+		PreparedStatement stat=null;
+		if(nic!=null && date!=null && question!=null)
+		{
+			
+			String data="insert into f_ques(f_id,date,question) values(?,?,?)";
+			stat=conn.prepareStatement(data);
+			stat.setString(1,nic);
+			stat.setString(2,date);
+			stat.setString(3,question);
+			stat.executeUpdate();
+			
+		}
+		}catch(Exception e) {
+			
+		}
 	}
+
 
 }
